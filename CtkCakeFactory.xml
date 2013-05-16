@@ -8,14 +8,14 @@
       <option name="XML" value="false" />
       <option name="JSP" value="false" />
       <option name="CSS_PROPERTY_VALUE" value="false" />
-      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="true" />
       <option name="CSS_RULESET_LIST" value="false" />
       <option name="CSS" value="false" />
       <option name="JAVA_SCRIPT" value="false" />
       <option name="SQL" value="false" />
       <option name="CUCUMBER_FEATURE_FILE" value="false" />
       <option name="CoffeeScript" value="false" />
-      <option name="PHP" value="true" />
+      <option name="PHP" value="false" />
       <option name="HAML" value="false" />
       <option name="OTHER" value="false" />
     </context>
@@ -85,7 +85,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ctkCakeHidden" value="$this-&gt;Cake-&gt;Hidden(array(&#10;&#9;'field' =&gt; $END$&#10;));" description="Hidden field object" toReformat="false" toShortenFQNames="true">
+  <template name="ctkCakeHidden" value="$this-&gt;Cake-&gt;Hidden(array(&#10;&#9;'field' =&gt; $END$&#10;))" description="Hidden field object" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -105,7 +105,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ctkCakeHiddenAdv" value="$this-&gt;Cake-&gt;Hidden(array(&#10;&#9;'field' =&gt; $VAR$,&#10;&#9;'options' =&gt; array(&#10;&#9;&#9;$END$&#10;&#9;)&#10;));" description="Hidden field object Advanced" toReformat="false" toShortenFQNames="true">
+  <template name="ctkCakeHiddenAdv" value="$this-&gt;Cake-&gt;Hidden(array(&#10;&#9;'field' =&gt; $VAR$,&#10;&#9;'options' =&gt; array(&#10;&#9;&#9;$END$&#10;&#9;)&#10;))" description="Hidden field object Advanced" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -126,9 +126,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ctkCakeInput" value="$this-&gt;Cake-&gt;Input(array(&#10;&#9;'field' =&gt; $VAR1$,&#10;))$VAR2$" description="Input field object" toReformat="false" toShortenFQNames="true">
-    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="VAR2" expression="" defaultValue=";" alwaysStopAt="true" />
+  <template name="ctkCakeInput" value="$this-&gt;Cake-&gt;Input(array(&#10;&#9;'field' =&gt; $END$,&#10;))" description="Input field object" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -194,9 +192,51 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="ctkCakeScript" value="$this-&gt;Cake-&gt;Script(array(&#10;&#9;'url' =&gt; $VAR$&#10;))$VAR2$" description="Script object" toReformat="false" toShortenFQNames="true">
+  <template name="ctkCakeScript" value="$this-&gt;Cake-&gt;Script(array(&#10;&#9;'url' =&gt; $VAR$&#10;))$VAR2$" description="Script object" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VAR2" expression="" defaultValue=";" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ctkCakeUrl" value="$this-&gt;Cake-&gt;Url(array(&#10;&#9;'controller' =&gt; $VAR1$,&#10;&#9;'action' =&gt; $VAR2$,$END$&#10;))" description="Url method to set cake internal link" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR2" expression="" defaultValue=";" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="PHP" value="true" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="ctkCakeUrlExtern" value="$this-&gt;Cake-&gt;Url('$END$')" description="Url method to set external link or absolute uri" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
